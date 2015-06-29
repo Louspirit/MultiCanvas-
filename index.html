@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Canvas Collaboratif - Guillaume Escarieux </title>
+    <script src="canvas.js"></script>
+    <style>
+      body { margin: 0; padding: 0; }
+      canvas {display: block; position: fixed; top:25px; right: 5px; }
+    </style>
+  </head>
+  <body>
+    <div id="canvas"> </div>
+    <div id="controls">
+      <button data-type="brush" data-brush="randomWidthPencil">Crayon</button>
+      <button data-type="brush" data-brush="interpolatedPencil">Pinceau</button>
+      <button data-type="brush" data-brush="trippyDots">Points</button>
+      <button data-type="brush" data-brush="neighborPointsPencil">Brouillon</button>
+      <button data-type="brush" data-brush="interpolatedEraser">Gomme</button>
+      Couleur : <input type="color" id="color_input" />
+      <input type="button" id="eraseAll" value="Tout effacer"/>
+    </div>
+
+  </body>
+</html>
